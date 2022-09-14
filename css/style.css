@@ -1,72 +1,73 @@
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body {
-    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-image: url("https://wallpaperaccess.com/full/5124819.jpg");
-    width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #3d67c2;
-    color: rgb(255, 255, 255);
-    font-size: 1.2vw;
-   }
+body {
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: url("https://wallpaperaccess.com/full/5124819.jpg");
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  color: #fff;
+  font-size: 20px;
+}
 
-  #heading {
-    max-width: 750px;
-    margin: 4rem auto;
-    padding: .6rem;
-  }
-  #main {
-      padding: 0% 20% 0% 20%;
-  }
+#survey-title {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 50px;
+}
 
-  #title {
-    font-size: 2.2rem;
-    text-align: center;
-    line-height: 1.2;
-    padding: .6rem;
-  }
+#survey-all {
+  padding: 0% 20% 0% 20%;
+}
 
-  #description {
-    font-size: 1.1rem;
-    text-align: center;
-    padding: .2rem;
-  }
+#title {
+  font-size: 35px;
+  text-align: center;
+  line-height: 35px;
+  padding: 30px;
+}
 
-  #survey-form {
-    background-color: #2222425d;
-    padding: 3rem 2.5rem;
-    border-radius: 7px;
-  }
+#description {
+  font-size: 20px;
+  text-align: center;
+  padding: 15px;
+}
 
-  #submit {
-    background: #3d67c2;
-    color: #fff;
-    padding: .7rem;
-    font-size: 1.15rem;
-    cursor: pointer;
-  }
+#survey-form {
+  background-color: #080a155d;
+  padding: 40px 80px;
+  border-radius: 30px;
+}
 
-  #submit:hover {
-    background: #3d67c2;
-  }
+#submit {
+  background: #3d67c2;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background: #4d72c0;
+}
 
 .form {
   width: 100%;
-  padding: .7rem;
-  border-radius: 6px;
-  font-size: 1.0rem;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 15px;
   border: none;
+  margin: 20px 10px 20px 10px;
 }
 
-  @media only screen and (max-width:480px){
-
+@media only screen and (max-width:480px){
   #main {
-    padding: 0% 0% 0% 0%;
-    }
+    padding: 0;
   }
+}
