@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form | Employee Satisfaction</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="heading">
+        <h1 id=title>Employee Satisfaction Survey Form</h1>
+        <p id="description">This Employee Satisfaction Survey Form includes questions to help you get to know your employees!</p>
+        </div>
+
+        <div id="main">
+            <form id="survey-form">
+            <div id="input-fields">
+                <label id="name-label"><b>Name:</b></label>
+                <input id="name" type="name" name="name" class="form" required placeholder="Full Name"><br>
+                <br>
+                <label id="email-label"><b>Email:</b></label>
+                <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com"><br>
+                <br>
+                <label id="number-label"><b>Age:</b></label>
+                <input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="Age">
+             </div>
+
+             <div id="dropdown-div"><br>
+                <label id="dropdown-label"><strong>Which job title describes you the most?</strong></label><br>
+                <select id="dropdown" name="code-lang" class="form">
+                    <option value="Big Data Engineer">Big Data Engineer</option>
+                    <option value="Applications Architect">Applications Architect</option>
+                    <option value="Web Developer">Web Developer</option>
+                    <option value="Database Administrator">Database Administrator</option>
+                    <option value="Computer Hardware Engineer">Computer Hardware Engineer</option>
+                    <option value="Computer Software Engineer">Computer Software Enginee</option>
+                    <option value="Data Security Analyst">Data Security Analyst</option>
+                    <option value="Information Systems Security Manager">Information Systems Security Manager</option>
+                    <option value="Health Information Technology Careers">Health Information Technology Careers</option>
+                    <option value="Statistician">Statistician</option>
+                    <option value="Mathematician">Mathematician</option>
+                    <option value="Business Intelligence Analyst">Business Intelligence Analyst</option>
+                    <option value="Computer and Information Research Scientist">Computer and Information Research Scientist
+                    </option>
+                    <option value="Network Architect">Network Architect</option>
+                    <option value="Systems Engineer">Systems Engineer</option>
+                    <option value="Computer Support Specialist">Computer Support Specialist</option>
+                    <option value="Mobile Application Developer">Mobile Application Developer</option>
+                </select>
+             </div>
+
+             <div id="button-area">
+                 <br>
+                <label id="job-label"><b>Employment Status:</b></label><br>
+                <input type="radio" class="radio-inline" name="gender" value="fulltime" checked> Full-Time Job<br>
+                <input type="radio" class="radio-inline" name="gender" value="parttime"> Part-Time Job<br>
+                <input type="radio" class="radio-inline" name="gender" value="student"> Student<br>
+                <input type="radio" class="radio-inline" name="gender" value="unemployed"> Unemployed
+            </div>
+
+              <div id="button-area"><br>
+                <label id="os-label"><b>Which operating system are you using? (Check all that apply)</b></label><br>
+                <input type="checkbox" name="os1" value="windows" checked> I am experienced with Windows-OS<br>
+                <input type="checkbox" name="os2" value="linux"> I am experienced with Linux-OS<br>
+                <input type="checkbox" name="0s3" value="mac"> I am experienced with Mac-OS<br>
+              </div>
+    
+              <div id="dropdown"><br><br>
+                <label id="dropdown-label"><strong>Programming language that you are expert at: </strong></label><br>
+                <select id="dropdown" name="code-lang" class="form"><br><br>
+                    <option value="Javascript">JavaScript</option>
+                    <option value="Python">Python</option>
+                    <option value="C#">C#</option>
+                    <option value="Go">Go</option>
+                    <option value="Java">Java</option>
+                    <option value="Kotlin">Kotlin</option>
+                    <option value="PHP">PHP</option>
+                    <option value="C">C</option>
+                    <option value="Swift">Swift</option>
+                    <option value="R">R</option>
+                    <option value="Ruby">Ruby</option>
+                    <option value="C++">C++</option>
+                    <option value="MatLab">MatLab</option>
+                    <option value="TypeScript">TypeScript</option>
+                    <option value="Scala">Scala</option>
+                    <option value="PHP">PHP</option>
+                </select>
+             </div>
+
+              <div id="button-area"><br><br>
+                <label id="os-label"><b>Social Media:</b></label><br>
+                <input type="checkbox" name="tech3" value="LinkedIn"> LinkedIn<br>
+                <input type="checkbox" name="tech1" value="GitHub"> GitHub<br>
+                <input type="checkbox" name="tech2" value="StackOverflow"> Stack Overflow<br>
+                <input type="checkbox" name="tech3" value="Twitter"> Twitter<br>
+                <input type="checkbox" name="tech3" value="Instagram"> Instagram<br>
+              </div>
+
+              <div id="ending"><br><br>
+                <label id="comments-label">Do you have suggestions about this survey?</label><br>
+                <textarea style="height: 120px;" class="form" placeholder="Please enter your comment here..."></textarea><br><br>
+                <input id="submit" type="submit"  class="form">
+              </div>
+
+            </form>
+        </div>
+</body>
+</html>
