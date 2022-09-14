@@ -11,27 +11,42 @@
 
 <body>
 
-    <div id="heading">
-        <h1 id=title>Employee Satisfaction Survey Form</h1>
+    <div id="survey-title">
+      <!-- 1. You should have a page title in an `h1` element with an `id` of `title`. -->
+        <h1 id="title">Employee Satisfaction Survey Form</h1>
+        <!-- 2. You should have a short explanation in a `p` element with an `id` of `description`. -->
         <p id="description">This Employee Satisfaction Survey Form includes questions to help you get to know your employees!</p>
         </div>
 
-        <div id="main">
+        <div id="survey-all">
+          <!-- 3. You should have a `form` element with an `id` of `survey-form`. -->
             <form id="survey-form">
             <div id="input-fields">
                 <label id="name-label"><b>Name:</b></label>
-                <input id="name" type="name" name="name" class="form" required placeholder="Full Name"><br>
+                <!-- 4. Inside the form element, you are **required** to enter your name in an `input` field that has an `id` of `name` and a `type` of `text`. -->
+                <input id="name" type="name" name="name" class="form" required placeholder="Name"><br>
                 <br>
-                <label id="email-label"><b>Email:</b></label>
+                <label id="email-label"><b>E-mail:</b></label>
+                <!-- 5. Inside the form element, you are **required** to enter your email in an `input` field that has an `id` of `email`. -->
                 <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com"><br>
+                <!-- 6. If you enter an email that is not formatted correctly, you will see an *HTML5 validation error*. (type="email") -->
                 <br>
                 <label id="number-label"><b>Age:</b></label>
-                <input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="Age">
-             </div>
+                <!-- 7. Inside the form, you can enter a number in an `input` field that has an `id` of `number`. -->
+                <input id="number" type="number" name="number" class="form" min="0" max="100" placeholder="Age">
+                <!-- 8. If you enter non-numbers in the number input, you will see an *HTML5 validation error*. (type="number") -->
 
-             <div id="dropdown-div"><br>
+                <!-- 9. If you enter numbers outside the range of the number input, which are defined by the `min` and `max` attributes, you will see an *HTML5 validation error*. (min="0" max="100") -->
+
+                <!-- 10. For the name, email, and number input fields, you can see corresponding `label` elements in the form, that describe the purpose of each field with the following ids: `id="name-label"`, `id="email-label"`, and `id="number-label"`. -->
+
+                <!-- 11. For the name, email, and number input fields, you can see placeholder text that gives a description or instructions for each field. -->
+            </div>
+
+            <div id="dropdown-div"><br>
                 <label id="dropdown-label"><strong>Which job title describes you the most?</strong></label><br>
-                <select id="dropdown" name="code-lang" class="form">
+                <!-- 12. Inside the form element, you should have a `select` dropdown element with an `id` of `dropdown` and at least two options to choose from. -->
+                <select id="dropdown" name="job-options" class="form">
                     <option value="Big Data Engineer">Big Data Engineer</option>
                     <option value="Applications Architect">Applications Architect</option>
                     <option value="Web Developer">Web Developer</option>
@@ -51,27 +66,29 @@
                     <option value="Computer Support Specialist">Computer Support Specialist</option>
                     <option value="Mobile Application Developer">Mobile Application Developer</option>
                 </select>
-             </div>
+            </div>
 
-             <div id="button-area">
-                 <br>
+            <div id="button-area">
+                <br>
                 <label id="job-label"><b>Employment Status:</b></label><br>
-                <input type="radio" class="radio-inline" name="gender" value="fulltime" checked> Full-Time Job<br>
-                <input type="radio" class="radio-inline" name="gender" value="parttime"> Part-Time Job<br>
-                <input type="radio" class="radio-inline" name="gender" value="student"> Student<br>
-                <input type="radio" class="radio-inline" name="gender" value="unemployed"> Unemployed
+                <!-- 13. Inside the form element, you can select an option from a group of at least two radio buttons that are grouped using the `name` attribute. -->
+                <input type="radio" class="radio-inline" name="employment" value="fulltime" checked> Full-Time Job<br>
+                <input type="radio" class="radio-inline" name="employment" value="parttime"> Part-Time Job<br>
+                <input type="radio" class="radio-inline" name="employment" value="student"> Student<br>
+                <input type="radio" class="radio-inline" name="employment" value="unemployed"> Unemployed<br>
             </div>
 
               <div id="button-area"><br>
-                <label id="os-label"><b>Which operating system are you using? (Check all that apply)</b></label><br>
+                <label id="os-label"><b>Which operating system/systems are you currently using? (Select all that apply.)</b></label><br>
+                <!-- 14. Inside the form element, you can select several fields from a series of checkboxes, each of which must have a `value` attribute. -->
                 <input type="checkbox" name="os1" value="windows" checked> I am experienced with Windows-OS<br>
                 <input type="checkbox" name="os2" value="linux"> I am experienced with Linux-OS<br>
                 <input type="checkbox" name="0s3" value="mac"> I am experienced with Mac-OS<br>
               </div>
     
-              <div id="dropdown"><br><br>
+              <div id="dropdown-div"><br><br>
                 <label id="dropdown-label"><strong>Programming language that you are expert at: </strong></label><br>
-                <select id="dropdown" name="code-lang" class="form"><br><br>
+                <select id="dropdown" name="programming_lang" class="form"><br><br>
                     <option value="Javascript">JavaScript</option>
                     <option value="Python">Python</option>
                     <option value="C#">C#</option>
@@ -89,21 +106,23 @@
                     <option value="Scala">Scala</option>
                     <option value="PHP">PHP</option>
                 </select>
-             </div>
+            </div>
 
               <div id="button-area"><br><br>
-                <label id="os-label"><b>Social Media:</b></label><br>
-                <input type="checkbox" name="tech3" value="LinkedIn"> LinkedIn<br>
-                <input type="checkbox" name="tech1" value="GitHub"> GitHub<br>
-                <input type="checkbox" name="tech2" value="StackOverflow"> Stack Overflow<br>
-                <input type="checkbox" name="tech3" value="Twitter"> Twitter<br>
-                <input type="checkbox" name="tech3" value="Instagram"> Instagram<br>
+                <label id="social"><b>Social medias that you are using:</b></label><br>
+                <input type="checkbox" name="LinkedIn" value="LinkedIn"> LinkedIn<br>
+                <input type="checkbox" name="GitHub" value="GitHub"> GitHub<br>
+                <input type="checkbox" name="StackOverflow" value="StackOverflow"> Stack Overflow<br>
+                <input type="checkbox" name="Twitter" value="Twitter"> Twitter<br>
+                <input type="checkbox" name="Instagram" value="Instagram"> Instagram<br>
               </div>
 
-              <div id="ending"><br><br>
+              <div id="footer"><br><br>
+                <!-- 15. Inside the form element, you are presented with a `textarea` for additional comments. -->
                 <label id="comments-label">Do you have suggestions about this survey?</label><br>
-                <textarea style="height: 120px;" class="form" placeholder="Please enter your comment here..."></textarea><br><br>
-                <input id="submit" type="submit"  class="form">
+                <textarea style="height: 100px;" class="form" placeholder="Please enter your comment here"></textarea><br><br>
+                <!-- 16. Inside the form element, you are presented with a button with `id` of `submit` to submit all the inputs. -->
+                <input id="submit" type="submit" class="form">
               </div>
 
             </form>
